@@ -5,20 +5,73 @@ body {
     font-family: "Press Start 2P", system-ui;
     margin: 0;
 }
-
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: powderblue;
-    border: 10px solid black;
-    float: left;
-    text-align: center;
-    padding: 10px;
-
+header{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    position: relative;
 }
 
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+  
+    
+}
+ul li a{
+    text-decoration: none;
+}
+.logo{
+    left: 100px;
+    position: relative;
+}
+
+
+.container{
+    border: 1px solid black;
+    background-color: aliceblue;
+    height: 350px;
+    width: 900px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    left: 290px;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.cover{
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+}
+.card{
+    display: grid;
+    position: relative;
+    left: 500px;
+}
 p{
-    clear: right;
-    padding: 10px;
+    white-space: nowrap;         /* Prevents the text from wrapping */
+    overflow: hidden;            /* Ensures that the overflowed content is hidden */
+    text-overflow: ellipsis;     /* Adds an ellipsis (...) to indicate that the text is truncated */
+    width: 400px;
 }
+
+
 
