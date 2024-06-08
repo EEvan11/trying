@@ -73,8 +73,11 @@ p{
     width: 400px;
 }
 
-.container:nth-child(even){
+.container:nth-child(even):hover{
     background-color: red;
+    text-shadow: 5px 5px 5px grey;
+    transition: .9s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .container:nth-child(odd){
