@@ -77,12 +77,45 @@ p{
     background-color: red;
     text-shadow: 5px 5px 5px grey;
     transition: .9s;
+    transform: translate(50px, 50px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.container:nth-child(odd){
+.container:nth-child(odd):hover{
     background-color: blue;
+    transition: .9s;
+    transform: rotateX(180deg);
 }
 
+.logos{
+    position: fixed;
+    left:1400px;
+    top: 100px;
+    bottom: 200px;
+}
+
+.logos{
+    height: 500px;
+    width: 500px;
+    background-image: url(./img/human2.jpg);
+    transform: skewX(35deg);
+    animation: looping;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}   
+.logos:hover{
+    background-image: url(./img/human1.jpg);
+    height: 500px;
+    width: 500px;
+    transform: skewY(35deg);
+    transition: .5s;
+    border-radius: 50%;
+    
+}
+
+@keyframes looping {
+    from{ margin-bottom: 100%;}
+    to {margin-top: 100%;}
+}
 
 
