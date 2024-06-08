@@ -73,5 +73,13 @@ p{
     width: 400px;
 }
 
+.container:nth-child(even){
+    background-color: red;
+}
+
+.container:nth-child(odd){
+    background-color: blue;
+}
+
 
 
